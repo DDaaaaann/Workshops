@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: Hotel Service API
+  version: 1.0.0
+  description: A simple API for managing hotel guests, rooms, and reservations
+
+paths:
+  /guests:
+    get:
+      summary: Get all guests
+      operationId: getGuests
+      responses:
+        '200':
+          description: OK
+        '418':
+          description: I'm a teapot
+    post:
+      summary: Create a new guest
+      operationId: createGuest
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Guest'
+      responses:
+        '201':
+          description: Guest created
+
+components:
+  schemas:
+    Guest:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        email:
+          type: string
