@@ -1,17 +1,24 @@
-% Titel van de presentatie
-% Naam van de spreker
-% Datum
+---
+author: Daan de Graaf
+title: Rest Principles
+subtitle: and the Art of Code Generation
+---
 
-# Eerste Slide
-
-- Punt 1
-- Punt 2
-- Punt 3
+## Workshop on REST Principles and Code Generation with Spring Boot and OpenAPI
 
 ---
 
-# Tweede Slide
+## Introduction
+ - REST principles
+ - HTTP methods
+ - response types
+ - OpenAPI
+ - code generation.
 
-## Subkop
+---
 
-Meer inhoud op deze slide.
+## Understanding REST
+- REST (Representational State Transfer) is an architectural style that uses standard HTTP protocols.
+- Resources (Guests, Rooms, Reservations), URIs, and HTTP verbs (GET, POST, PUT, DELETE).
+
+---
